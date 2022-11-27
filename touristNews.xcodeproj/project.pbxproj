@@ -9,23 +9,24 @@
 /* Begin PBXBuildFile section */
 		C654BD26293417710029D1E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654BD25293417710029D1E6 /* AppDelegate.swift */; };
 		C654BD28293417710029D1E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654BD27293417710029D1E6 /* SceneDelegate.swift */; };
-		C654BD2A293417710029D1E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654BD29293417710029D1E6 /* ViewController.swift */; };
-		C654BD2D293417710029D1E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C654BD2B293417710029D1E6 /* Main.storyboard */; };
 		C654BD30293417710029D1E6 /* touristNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C654BD2E293417710029D1E6 /* touristNews.xcdatamodeld */; };
 		C654BD32293417730029D1E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C654BD31293417730029D1E6 /* Assets.xcassets */; };
-		C654BD35293417730029D1E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C654BD33293417730029D1E6 /* LaunchScreen.storyboard */; };
+		C654BD412934189B0029D1E6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C654BD402934189B0029D1E6 /* Alamofire */; };
+		C654BD44293418AB0029D1E6 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C654BD43293418AB0029D1E6 /* Lottie */; };
+		C654BD47293418C20029D1E6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C654BD46293418C20029D1E6 /* RxCocoa */; };
+		C654BD49293418C30029D1E6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C654BD48293418C30029D1E6 /* RxSwift */; };
+		C654BD4C293418D70029D1E6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C654BD4B293418D70029D1E6 /* SDWebImage */; };
+		C654BD5029341DF50029D1E6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654BD4F29341DF50029D1E6 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C654BD22293417710029D1E6 /* touristNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touristNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C654BD25293417710029D1E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C654BD27293417710029D1E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C654BD29293417710029D1E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C654BD2C293417710029D1E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C654BD2F293417710029D1E6 /* touristNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = touristNews.xcdatamodel; sourceTree = "<group>"; };
 		C654BD31293417730029D1E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C654BD34293417730029D1E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C654BD36293417730029D1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C654BD4F29341DF50029D1E6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +34,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C654BD47293418C20029D1E6 /* RxCocoa in Frameworks */,
+				C654BD412934189B0029D1E6 /* Alamofire in Frameworks */,
+				C654BD49293418C30029D1E6 /* RxSwift in Frameworks */,
+				C654BD44293418AB0029D1E6 /* Lottie in Frameworks */,
+				C654BD4C293418D70029D1E6 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +64,62 @@
 		C654BD24293417710029D1E6 /* touristNews */ = {
 			isa = PBXGroup;
 			children = (
-				C654BD25293417710029D1E6 /* AppDelegate.swift */,
-				C654BD27293417710029D1E6 /* SceneDelegate.swift */,
-				C654BD29293417710029D1E6 /* ViewController.swift */,
-				C654BD2B293417710029D1E6 /* Main.storyboard */,
-				C654BD31293417730029D1E6 /* Assets.xcassets */,
-				C654BD33293417730029D1E6 /* LaunchScreen.storyboard */,
+				C654BD3C293417C70029D1E6 /* Application */,
 				C654BD36293417730029D1E6 /* Info.plist */,
-				C654BD2E293417710029D1E6 /* touristNews.xcdatamodeld */,
 			);
 			path = touristNews;
+			sourceTree = "<group>";
+		};
+		C654BD3C293417C70029D1E6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C654BD52293420790029D1E6 /* Data */,
+				C654BD51293420610029D1E6 /* Resources */,
+				C654BD4D29341DDE0029D1E6 /* Views */,
+				C654BD3D293417D50029D1E6 /* Common */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C654BD3D293417D50029D1E6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C654BD25293417710029D1E6 /* AppDelegate.swift */,
+				C654BD27293417710029D1E6 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C654BD4D29341DDE0029D1E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C654BD4E29341DE40029D1E6 /* Splash */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C654BD4E29341DE40029D1E6 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C654BD4F29341DF50029D1E6 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C654BD51293420610029D1E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C654BD31293417730029D1E6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C654BD52293420790029D1E6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C654BD2E293417710029D1E6 /* touristNews.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +138,13 @@
 			dependencies = (
 			);
 			name = touristNews;
+			packageProductDependencies = (
+				C654BD402934189B0029D1E6 /* Alamofire */,
+				C654BD43293418AB0029D1E6 /* Lottie */,
+				C654BD46293418C20029D1E6 /* RxCocoa */,
+				C654BD48293418C30029D1E6 /* RxSwift */,
+				C654BD4B293418D70029D1E6 /* SDWebImage */,
+			);
 			productName = touristNews;
 			productReference = C654BD22293417710029D1E6 /* touristNews.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +173,12 @@
 				Base,
 			);
 			mainGroup = C654BD19293417710029D1E6;
+			packageReferences = (
+				C654BD3F2934189A0029D1E6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C654BD42293418AB0029D1E6 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C654BD45293418C20029D1E6 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				C654BD4A293418D70029D1E6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = C654BD23293417710029D1E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,9 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C654BD35293417730029D1E6 /* LaunchScreen.storyboard in Resources */,
 				C654BD32293417730029D1E6 /* Assets.xcassets in Resources */,
-				C654BD2D293417710029D1E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,33 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C654BD2A293417710029D1E6 /* ViewController.swift in Sources */,
 				C654BD26293417710029D1E6 /* AppDelegate.swift in Sources */,
 				C654BD28293417710029D1E6 /* SceneDelegate.swift in Sources */,
 				C654BD30293417710029D1E6 /* touristNews.xcdatamodeld in Sources */,
+				C654BD5029341DF50029D1E6 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C654BD2B293417710029D1E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C654BD2C293417710029D1E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C654BD33293417730029D1E6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C654BD34293417730029D1E6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C654BD37293417730029D1E6 /* Debug */ = {
@@ -296,7 +340,7 @@
 				INFOPLIST_FILE = touristNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +368,7 @@
 				INFOPLIST_FILE = touristNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,6 +406,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C654BD3F2934189A0029D1E6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C654BD42293418AB0029D1E6 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C654BD45293418C20029D1E6 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C654BD4A293418D70029D1E6 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C654BD402934189B0029D1E6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C654BD3F2934189A0029D1E6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C654BD43293418AB0029D1E6 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C654BD42293418AB0029D1E6 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		C654BD46293418C20029D1E6 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C654BD45293418C20029D1E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C654BD48293418C30029D1E6 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C654BD45293418C20029D1E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		C654BD4B293418D70029D1E6 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C654BD4A293418D70029D1E6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C654BD2E293417710029D1E6 /* touristNews.xcdatamodeld */ = {
