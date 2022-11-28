@@ -17,6 +17,7 @@
 		C654BD49293418C30029D1E6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C654BD48293418C30029D1E6 /* RxSwift */; };
 		C654BD4C293418D70029D1E6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C654BD4B293418D70029D1E6 /* SDWebImage */; };
 		C654BD5029341DF50029D1E6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654BD4F29341DF50029D1E6 /* SplashViewController.swift */; };
+		C654BD54293446EE0029D1E6 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654BD53293446EE0029D1E6 /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C654BD31293417730029D1E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C654BD36293417730029D1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C654BD4F29341DF50029D1E6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		C654BD53293446EE0029D1E6 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C654BD4F29341DF50029D1E6 /* SplashViewController.swift */,
+				C654BD53293446EE0029D1E6 /* SplashViewModel.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C654BD54293446EE0029D1E6 /* SplashViewModel.swift in Sources */,
 				C654BD26293417710029D1E6 /* AppDelegate.swift in Sources */,
 				C654BD28293417710029D1E6 /* SceneDelegate.swift in Sources */,
 				C654BD30293417710029D1E6 /* touristNews.xcdatamodeld in Sources */,
