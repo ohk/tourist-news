@@ -24,15 +24,20 @@ class SplashViewController: UIViewController {
         DispatchQueue.main.async{ [weak self] in
             guard let self = self else { return }
             
-            if NetworkMonitor.shared.isConnected == false {
+            if NetworkMonitor.shared.isConnected {
                 Logger.shared.addLog(message: "Connected to network. App should be start")
                 self.startApp()
             } else {
-                Logger.shared.addLog(message: "No Connection. Notify the user.")
                 self.showNativeAlertWith(
                     message: "There seems to be a problem with your internet connection. The news and users you will see may not reflect the updated data. Please check your internet connection.",
-                    positiveAction: UIAlertAction(title: "Open The App", style: .cancel, handler: { (action) in self.startApp()}),
-                    negativeAction: UIAlertAction(title: "Close The App", style: .destructive, handler: { (action) in exit(-1) })
+                    positiveAction: UIAlertAction(title: "Open The App", style: .cancel, handler: { (action) in
+                        self.startApp()
+                        Logger.shared.addLog(message: "User open the app without connection")
+                    }),
+                    negativeAction: UIAlertAction(title: "Close The App", style: .destructive, handler: { (action) in
+                        Logger.shared.addLog(message: "User close the app")
+                        exit(-1)
+                    })
                 )
             }
         }
