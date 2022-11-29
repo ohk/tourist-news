@@ -17,6 +17,7 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         animateGradient()
         addLabel()
+        startApp()
     }
     
     private func animateGradient() {
@@ -67,5 +68,12 @@ class SplashViewController: UIViewController {
         appLabel.textColor = .white
         appLabel.center = self.view.center
         self.view.addSubview(appLabel)
+    }
+    
+    func startApp() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { [weak self] in
+            guard let self = self else { return }
+            self.navigateTo(vc: .Home)
+        })
     }
 }
