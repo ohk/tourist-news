@@ -19,6 +19,7 @@
 		C645065F29366F9100D6EED1 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645065E29366F9100D6EED1 /* UsersModel.swift */; };
 		C645066229368A6000D6EED1 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645066129368A6000D6EED1 /* NewsCell.swift */; };
 		C64506652936A28B00D6EED1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64506642936A28B00D6EED1 /* UserCell.swift */; };
+		C64506672936A5DE00D6EED1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C64506662936A5DE00D6EED1 /* README.md */; };
 		C654BD26293417710029D1E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654BD25293417710029D1E6 /* AppDelegate.swift */; };
 		C654BD28293417710029D1E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654BD27293417710029D1E6 /* SceneDelegate.swift */; };
 		C654BD30293417710029D1E6 /* touristNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C654BD2E293417710029D1E6 /* touristNews.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 		C645065E29366F9100D6EED1 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		C645066129368A6000D6EED1 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		C64506642936A28B00D6EED1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		C64506662936A5DE00D6EED1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C654BD22293417710029D1E6 /* touristNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touristNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C654BD25293417710029D1E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C654BD27293417710029D1E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				C654BD3C293417C70029D1E6 /* Application */,
 				C654BD36293417730029D1E6 /* Info.plist */,
+				C64506662936A5DE00D6EED1 /* README.md */,
 			);
 			path = touristNews;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64506672936A5DE00D6EED1 /* README.md in Resources */,
 				C654BD32293417730029D1E6 /* Assets.xcassets in Resources */,
 				C64506572935C6FD00D6EED1 /* loading.json in Resources */,
 			);

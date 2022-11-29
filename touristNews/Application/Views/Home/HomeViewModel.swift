@@ -54,7 +54,7 @@ class HomeViewModel {
             }
         }).disposed(by: disposeBag)
         
-        usersData.observe(on: MainScheduler.instance).skip(1).subscribe(onNext: { [weak self] data in
+        pageUsersCount.observe(on: MainScheduler.instance).skip(1).subscribe(onNext: { [weak self] data in
             if self?.requestWaitStatus == false {
                 self?.getData()
             }
@@ -91,6 +91,7 @@ class HomeViewModel {
     }
     
     func handlePageType(selectedIndex: Int) {
+        requestWaitStatus = false
         pageType.accept(SelectionType(rawValue: selectedIndex) ?? .news)
     }
     
@@ -102,7 +103,7 @@ class HomeViewModel {
                 RequestHandler.shared.getRequest(url: "http://restapi.adequateshop.com/api/Feed/GetNewsFeed?page=\(pageNewsCount.value)", model: NewsModel.self) { [weak self] data in
                     guard let self = self else { return }
                     let nData = self.newsData.value
-                    let nValue = nData + (data?.data ?? []) 
+                    let nValue = nData + (data?.data ?? [])
                     self.newsData.accept(nValue)
                     self.requestWaitStatus = false
                     if self.subscribeDataStatus == false {
@@ -113,7 +114,7 @@ class HomeViewModel {
                 RequestHandler.shared.getRequest(url: "http://restapi.adequateshop.com/api/Tourist?page=\(pageUsersCount.value)", model: UsersModel.self) { [weak self] data in
                     guard let self = self else { return }
                     let nData = self.usersData.value
-                    let nValue = (data?.data ?? []) + nData
+                    let nValue = nData + (data?.data ?? [])
                     self.usersData.accept(nValue)
                     self.requestWaitStatus = false
                     if self.subscribeDataStatus == false {
