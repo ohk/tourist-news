@@ -84,6 +84,7 @@
 		C645064A2935C24C00D6EED1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C64506542935C64E00D6EED1 /* UIWindow.swift */,
 				C645064B2935C27E00D6EED1 /* NetworkMonitor.swift */,
 				C64506522935C62000D6EED1 /* ApplicationLoader.swift */,
 				C64506582935FC8300D6EED1 /* RequestHandler.swift */,
@@ -95,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				C645064E2935C29E00D6EED1 /* Logger.swift */,
-				C64506542935C64E00D6EED1 /* UIWindow.swift */,
 				C645065A293600C100D6EED1 /* LocalStorageManager.swift */,
 			);
 			path = Util;
