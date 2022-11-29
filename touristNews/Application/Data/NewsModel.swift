@@ -10,7 +10,7 @@ import Foundation
 // MARK: - NewsModel
 struct NewsModel: Codable {
     let page, perPage, totalrecord, totalPages: Int
-    let data: [Data]
+    let data: [NewsModelData]
 
     enum CodingKeys: String, CodingKey {
         case page
@@ -21,8 +21,8 @@ struct NewsModel: Codable {
     }
 }
 
-// MARK: - Datum
-struct Data: Codable {
+// MARK: - NewsModelData
+struct NewsModelData: Codable {
     let id: Int
     let title, description: String?
     let location: String

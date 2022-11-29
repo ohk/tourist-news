@@ -16,14 +16,14 @@ class RequestHandler {
         ApplicationLoader.shared.start()
         let storedValue = AppStorage.readData(key: url, type: model)
         
-        if(!NetworkMonitor.shared.isConnected) {
+        if NetworkMonitor.shared.isConnected  {
             let request = AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default)
             
             request.responseDecodable(of: model.self) { (response) in
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
                     ApplicationLoader.shared.dismiss()
                 })
-                
+                //debugPrint(response)
                 guard let response = response.value else {
                     completion(nil)
                     return
