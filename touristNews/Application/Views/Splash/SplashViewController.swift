@@ -89,13 +89,18 @@ class SplashViewController: UIViewController {
         appLabel.textAlignment = .center
         appLabel.sizeToFit()
         appLabel.textColor = .white
-        appLabel.center = self.view.center
+        appLabel.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(appLabel)
+        appLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        appLabel.bottomAnchor.constraint(equalTo: view.safeBottomAnchor, constant: -150).isActive = true
+       
     }
     
     func startApp() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { [weak self] in
+        ApplicationLoader.shared.start()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: { [weak self] in
             guard let self = self else { return }
+            ApplicationLoader.shared.dismiss()
             self.navigateTo(vc: .Home)
         })
     }
